@@ -1,0 +1,95 @@
+-- mdl2lus - 2014 ver. 0.41 (SHA 79444ea)
+-- Wed Dec 13 11:42:29 2017
+const kp_teta : real;
+const T : real;
+const pi : real;
+const ki_teta : real;
+node decision(Cg: real; Cd: real; state_bool_n: real) returns (v_d: real; v_g: real; Cd_out: real);
+var
+   w_000: real;
+   w_001: real;
+   w_002: real;
+   w_003: real;
+   w_004: real;
+   w_005: real;
+   w_006: real;
+   w_007: real;
+   w_008: real;
+   w_009: real;
+   w_010: real;
+let
+   w_006 = Cg;
+   (w_007, w_008) = Correcteurs_n(w_004, w_002);
+   Cd_out = w_005;
+   w_005 = Cd;
+   v_d = w_009;
+   w_001 = 0.5;
+   w_009 = (if w_010<>0.0 then w_003 else w_007);
+   v_g = w_000;
+   w_010 = state_bool_n;
+   w_000 = (if w_010<>0.0 then w_001 else w_008);
+   w_003 = (- 0.5);
+   (w_004, w_002) = Ecarts(w_006, w_005);
+tel
+node Ecarts(Cg: real; Cd: real) returns (eps_teta: real; eps_delta: real);
+var
+   w_000: real;
+   w_001: real;
+   w_002: real;
+   w_003: real;
+   w_004: real;
+let
+   w_004 = (w_003 - w_002);
+   w_002 = Cg;
+   w_000 = (w_003 + w_002);
+   eps_teta = w_001;
+   w_003 = Cd;
+   eps_delta = w_000;
+   w_001 = ((pi / 200.0) * w_004);
+tel
+node Correcteurs_n(eps_teta: real; eps_delta: real) returns (v_d: real; v_g: real);
+var
+   w_000: real;
+   w_001: real;
+   w_002: real;
+   w_003: real;
+   w_004: real;
+   w_005: real;
+   w_006: real;
+   w_007: real;
+   w_008: real;
+   w_009: real;
+   w_010: real;
+   w_011: real;
+   w_012: real;
+   w_013: real;
+   w_014: real;
+   w_015: real;
+   w_016: real;
+   w_017: real;
+   w_018: real;
+   w_019: real;
+let
+   w_008 = (0.5 * w_017);
+   w_005 = (w_001 + w_000);
+   w_007 = (0.5 * w_016);
+   w_010 = ((- w_012) + w_014);
+   w_017 = (w_009 + w_011);
+   w_009 = (w_019 + w_018);
+   w_013 = eps_teta;
+   w_003 = (w_004 + w_013);
+   w_018 = (kp_teta * w_013);
+   w_015 = (2.0 * w_009);
+   w_014 = (0.005 * w_006);
+   w_019 = (ki_teta * w_005);
+   v_d = w_008;
+   w_006 = eps_delta;
+   w_000 = (0.0 -> (pre w_005));
+   w_001 = (w_002 * w_003);
+   w_004 = (0.0 -> (pre w_013));
+   v_g = w_007;
+   w_012 = (if w_015<0.0 then -w_015 else w_015);
+   w_011 = (2.0 * w_010);
+   w_002 = (0.5 * T);
+   w_016 = ((- w_009) + w_011);
+tel

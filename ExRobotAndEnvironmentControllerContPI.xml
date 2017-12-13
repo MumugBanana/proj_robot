@@ -1,0 +1,961 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xml>
+<Model>
+    <property name="Name" value="ExRobotAndEnvironmentControllerContPI"/>
+    <property  name="Version" value="8.9"/>
+    <property name="SavedCharacterEncoding" value="UTF-8"/>
+    <GraphicalInterface>
+        <property  name="NumRootInports" value="0"/>
+        <property  name="NumRootOutports" value="0"/>
+        <property name="ParameterArgumentNames" value=""/>
+        <property name="ComputedModelVersion" value="1.290"/>
+        <property  name="NumModelReferences" value="0"/>
+        <property  name="NumTestPointedSignals" value="0"/>
+        <property  name="NumProvidedFunctions" value="0"/>
+        <property  name="NumRequiredFunctions" value="0"/>
+        <property  name="NumResetEvents" value="0"/>
+        <property  name="HasInitializeEvent" value="0"/>
+        <property  name="HasTerminateEvent" value="0"/>
+        <property  name="IsExportFunctionModel" value="0"/>
+        <property  name="NumParameterArguments" value="0"/>
+        <property  name="OrderedModelArguments" value="1"/>
+    </GraphicalInterface>
+    <property name="LogicAnalyzerGraphicalSettings" value=""/>
+    <property name="LogicAnalyzerPlugin" value="on"/>
+    <property name="LogicAnalyzerSignalOrdering" value=""/>
+    <property name="DiagnosticSuppressor" value="on"/>
+    <property name="SuppressorTable" value="22 serialization::archive 11 0 6 0 0 0 11 0"/>
+    <property name="SLCCPlugin" value="on"/>
+    <property  name="ScopeRefreshTime" value="0.035000"/>
+    <property name="OverrideScopeRefreshTime" value="off"/>
+    <property name="DisableAllScopes" value="off"/>
+    <property name="DataTypeOverride" value="UseLocalSettings"/>
+    <property name="DataTypeOverrideAppliesTo" value="AllNumericTypes"/>
+    <property name="MinMaxOverflowLogging" value="UseLocalSettings"/>
+    <property name="MinMaxOverflowArchiveMode" value="Overwrite"/>
+    <property name="FPTRunName" value="Run 1"/>
+    <property  name="MaxMDLFileLineLength" value="120"/>
+    <property name="LastSavedArchitecture" value="glnxa64"/>
+    <Object>
+        <property name="$PropName" value="BdWindowsInfo"/>
+        <property  name="$ObjectID" value="1"/>
+        <property name="$ClassName" value="Simulink.BDWindowsInfo"/>
+        <Object>
+            <property name="$PropName" value="WindowsInfo"/>
+            <property  name="$ObjectID" value="2"/>
+            <property name="$ClassName" value="Simulink.WindowInfo"/>
+            <property  name="IsActive" value="[1]"/>
+            <property  name="Location" value="[0.0 28.0 1920.0 1018.0]"/>
+            <Object>
+                <property name="$PropName" value="ModelBrowserInfo"/>
+                <property  name="$ObjectID" value="3"/>
+                <property name="$ClassName" value="Simulink.ModelBrowserInfo"/>
+                <property  name="Visible" value="[0]"/>
+                <property name="DockPosition" value="Left"/>
+                <property  name="Width" value="[50]"/>
+                <property  name="Height" value="[50]"/>
+                <property  name="Filter" value="[8]"/>
+            </Object>
+            <Object>
+                <property name="$PropName" value="ExplorerBarInfo"/>
+                <property  name="$ObjectID" value="4"/>
+                <property name="$ClassName" value="Simulink.ExplorerBarInfo"/>
+                <property  name="Visible" value="[1]"/>
+            </Object>
+            <Array>
+                <property name="Type" value="Simulink.EditorInfo"/>
+                <property  name="Dimension" value="8"/>
+                <Object>
+                    <property  name="$ObjectID" value="5"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="192"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[3.0]"/>
+                    <property  name="Offset" value="[52.788609715242785 46.938860971524285]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="6"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="567"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.0]"/>
+                    <property  name="Offset" value="[-498.78721977632472 201.93892600922663]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="7"/>
+                    <property  name="IsActive" value="[1]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="485"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.75]"/>
+                    <property  name="Offset" value="[-207.60840194274937 100.16008614501081]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="8"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="147"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.25]"/>
+                    <property  name="Offset" value="[-217.37712390075353 40.745388707084317]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="9"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="504"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.0]"/>
+                    <property  name="Offset" value="[-388.83809523809373 17.619047619047308]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="10"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="746"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.5]"/>
+                    <property  name="Offset" value="[-314.64990316164159 -209.9246231155779]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="11"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="778"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.0]"/>
+                    <property  name="Offset" value="[0.0 0.0]"/>
+                </Object>
+                <Object>
+                    <property  name="$ObjectID" value="12"/>
+                    <property  name="IsActive" value="[0]"/>
+                    <property name="ViewObjType" value="SimulinkSubsys"/>
+                    <property name="LoadSaveID" value="692"/>
+                    <property  name="Extents" value="[1882.0 824.0]"/>
+                    <property  name="ZoomFactor" value="[1.5]"/>
+                    <property  name="Offset" value="[-461.83056839255812 -170.86854236174156]"/>
+                </Object>
+                <property name="PropName" value="EditorsInfo"/>
+            </Array>
+            <Object>
+                <property name="$PropName" value="DockComponentsInfo"/>
+                <property  name="$ObjectID" value="13"/>
+                <property name="$ClassName" value="Simulink.DockComponentInfo"/>
+                <property name="Type" value="GLUE2:PropertyInspector"/>
+                <property name="ID" value="Property Inspector"/>
+                <property  name="Visible" value="[0]"/>
+                <property name="CreateCallback" value=""/>
+                <property name="UserData" value=""/>
+                <property  name="Floating" value="[0]"/>
+                <property name="DockPosition" value="Right"/>
+                <property  name="Width" value="[640]"/>
+                <property  name="Height" value="[480]"/>
+            </Object>
+            <property name="WindowState" value="AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCAAAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AAAALAD///8AAAeAAAADfAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAANK/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"/>
+        </Object>
+    </Object>
+    <property name="HideAutomaticNames" value="on"/>
+    <property name="Created" value="Mon Jan 31 14:37:39 2011"/>
+    <property name="Creator" value="alex"/>
+    <property name="UpdateHistory" value="UpdateHistoryNever"/>
+    <property name="ModifiedByFormat" value="%&amp;lt;Auto>"/>
+    <property name="LastModifiedBy" value="esperonb"/>
+    <property name="ModifiedDateFormat" value="%&amp;lt;Auto>"/>
+    <property name="LastModifiedDate" value="Tue Nov 28 15:06:10 2017"/>
+    <property  name="RTWModifiedTimeStamp" value="433782369"/>
+    <property name="ModelVersionFormat" value="1.%&amp;lt;AutoIncrement:290>"/>
+    <property name="ConfigurationManager" value="none"/>
+    <property name="SampleTimeColors" value="on"/>
+    <property name="SampleTimeAnnotations" value="off"/>
+    <property name="LibraryLinkDisplay" value="none"/>
+    <property name="WideLines" value="off"/>
+    <property name="ShowLineDimensions" value="off"/>
+    <property name="ShowPortDataTypes" value="off"/>
+    <property name="PortDataTypeDisplayFormat" value="AliasTypeOnly"/>
+    <property name="ShowEditTimeErrors" value="on"/>
+    <property name="ShowEditTimeWarnings" value="on"/>
+    <property name="ShowEditTimeAdvisorChecks" value="off"/>
+    <property name="ShowPortUnits" value="off"/>
+    <property name="ShowDesignRanges" value="off"/>
+    <property name="ShowLoopsOnError" value="on"/>
+    <property name="IgnoreBidirectionalLines" value="off"/>
+    <property name="ShowStorageClass" value="off"/>
+    <property name="ShowTestPointIcons" value="on"/>
+    <property name="ShowSignalResolutionIcons" value="on"/>
+    <property name="ShowViewerIcons" value="on"/>
+    <property name="SortedOrder" value="off"/>
+    <property name="VariantCondition" value="off"/>
+    <property name="ExecutionContextIcon" value="off"/>
+    <property name="ShowLinearizationAnnotations" value="on"/>
+    <property name="ShowVisualizeInsertedRTB" value="on"/>
+    <property name="ShowMarkup" value="on"/>
+    <property name="BlockNameDataTip" value="off"/>
+    <property name="BlockParametersDataTip" value="off"/>
+    <property name="BlockDescriptionStringDataTip" value="off"/>
+    <property name="ToolBar" value="on"/>
+    <property name="StatusBar" value="on"/>
+    <property name="BrowserShowLibraryLinks" value="off"/>
+    <property name="FunctionConnectors" value="off"/>
+    <property name="BrowserLookUnderMasks" value="off"/>
+    <property name="SimulationMode" value="normal"/>
+    <property name="VisualizeLoggedSignalsWhenLoggingToFile" value="off"/>
+    <property name="PauseTimes" value="5"/>
+    <property  name="NumberOfSteps" value="100"/>
+    <property  name="SnapshotBufferSize" value="10"/>
+    <property  name="SnapshotInterval" value="10"/>
+    <property  name="NumberOfLastSnapshots" value="0"/>
+    <property name="LinearizationMsg" value="none"/>
+    <property name="Profile" value="off"/>
+    <property name="ParamWorkspaceSource" value="MATLABWorkspace"/>
+    <property name="AccelSystemTargetFile" value="accel.tlc"/>
+    <property name="AccelTemplateMakefile" value="accel_default_tmf"/>
+    <property name="AccelMakeCommand" value="make_rtw"/>
+    <property name="TryForcingSFcnDF" value="off"/>
+    <Object>
+        <property name="$PropName" value="DataLoggingOverride"/>
+        <property  name="$ObjectID" value="14"/>
+        <property name="$ClassName" value="Simulink.SimulationData.ModelLoggingInfo"/>
+        <property name="model_" value="ExRobotAndEnvironmentControllerContPI"/>
+        <Array>
+            <property name="Type" value="Cell"/>
+            <property  name="Dimension" value="1"/>
+            <property name="Cell" value="ExRobotAndEnvironmentControllerContPI"/>
+            <property name="PropName" value="logAsSpecifiedByModels_"/>
+        </Array>
+        <Array>
+            <property name="Type" value="Cell"/>
+            <property  name="Dimension" value="1"/>
+            <property name="Cell" value=""/>
+            <property name="PropName" value="logAsSpecifiedByModelsSSIDs_"/>
+        </Array>
+    </Object>
+    <property name="ExtModeBatchMode" value="off"/>
+    <property name="ExtModeEnableFloating" value="on"/>
+    <property name="ExtModeTrigType" value="manual"/>
+    <property name="ExtModeTrigMode" value="normal"/>
+    <property name="ExtModeTrigPort" value="1"/>
+    <property name="ExtModeTrigElement" value="any"/>
+    <property  name="ExtModeTrigDuration" value="1000"/>
+    <property name="ExtModeTrigDurationFloating" value="auto"/>
+    <property  name="ExtModeTrigHoldOff" value="0"/>
+    <property  name="ExtModeTrigDelay" value="0"/>
+    <property name="ExtModeTrigDirection" value="rising"/>
+    <property  name="ExtModeTrigLevel" value="0"/>
+    <property name="ExtModeArchiveMode" value="off"/>
+    <property name="ExtModeAutoIncOneShot" value="off"/>
+    <property name="ExtModeIncDirWhenArm" value="off"/>
+    <property name="ExtModeAddSuffixToVar" value="off"/>
+    <property name="ExtModeWriteAllDataToWs" value="off"/>
+    <property name="ExtModeArmWhenConnect" value="on"/>
+    <property name="ExtModeSkipDownloadWhenConnect" value="off"/>
+    <property name="ExtModeLogAll" value="on"/>
+    <property name="ExtModeAutoUpdateStatusClock" value="on"/>
+    <property name="ShowModelReferenceBlockVersion" value="off"/>
+    <property name="ShowModelReferenceBlockIO" value="off"/>
+    <property name="OrderedModelArguments" value="on"/>
+    <Array>
+        <property name="Type" value="Handle"/>
+        <property  name="Dimension" value="1"/>
+        <Simulink.ConfigSet>
+            <property  name="$ObjectID" value="15"/>
+            <property name="Version" value="1.17.0"/>
+            <property  name="DisabledProps" value="[]"/>
+            <property name="Description" value=""/>
+            <Array>
+                <property name="Type" value="Handle"/>
+                <property  name="Dimension" value="10"/>
+                <Simulink.SolverCC>
+                    <property  name="$ObjectID" value="16"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value=""/>
+                    <property name="StartTime" value="0.0"/>
+                    <property name="StopTime" value="1000"/>
+                    <property name="AbsTol" value="auto"/>
+                    <property name="FixedStep" value=".01"/>
+                    <property name="InitialStep" value="auto"/>
+                    <property name="MaxNumMinSteps" value="-1"/>
+                    <property  name="MaxOrder" value="5"/>
+                    <property name="ZcThreshold" value="auto"/>
+                    <property name="ConsecutiveZCsStepRelTol" value="10*128*eps"/>
+                    <property name="MaxConsecutiveZCs" value="1000"/>
+                    <property  name="ExtrapolationOrder" value="4"/>
+                    <property  name="NumberNewtonIterations" value="1"/>
+                    <property name="MaxStep" value="auto"/>
+                    <property name="MinStep" value="auto"/>
+                    <property name="MaxConsecutiveMinStep" value="1"/>
+                    <property name="RelTol" value="1e-3"/>
+                    <property name="EnableMultiTasking" value="on"/>
+                    <property name="EnableConcurrentExecution" value="off"/>
+                    <property name="ConcurrentTasks" value="off"/>
+                    <property name="Solver" value="ode45"/>
+                    <property name="SolverName" value="ode45"/>
+                    <property name="SolverJacobianMethodControl" value="auto"/>
+                    <property name="ShapePreserveControl" value="DisableAll"/>
+                    <property name="ZeroCrossControl" value="UseLocalSettings"/>
+                    <property name="ZeroCrossAlgorithm" value="Nonadaptive"/>
+                    <property name="AlgebraicLoopSolver" value="TrustRegion"/>
+                    <property name="SolverInfoToggleStatus" value="off"/>
+                    <property name="IsAutoAppliedInSIP" value="off"/>
+                    <property name="SolverResetMethod" value="Fast"/>
+                    <property name="PositivePriorityOrder" value="off"/>
+                    <property name="AutoInsertRateTranBlk" value="off"/>
+                    <property name="SampleTimeConstraint" value="Unconstrained"/>
+                    <property name="InsertRTBMode" value="Whenever possible"/>
+                    <property  name="SampleTimeProperty" value="[]"/>
+                </Simulink.SolverCC>
+                <Simulink.DataIOCC>
+                    <property  name="$ObjectID" value="17"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value=""/>
+                    <property name="Decimation" value="1"/>
+                    <property name="ExternalInput" value="[t, u]"/>
+                    <property name="FinalStateName" value="xFinal"/>
+                    <property name="InitialState" value="xInitial"/>
+                    <property name="LimitDataPoints" value="on"/>
+                    <property name="MaxDataPoints" value="1000"/>
+                    <property name="LoadExternalInput" value="off"/>
+                    <property name="LoadInitialState" value="off"/>
+                    <property name="SaveFinalState" value="off"/>
+                    <property name="SaveCompleteFinalSimState" value="off"/>
+                    <property name="SaveFormat" value="Array"/>
+                    <property name="SignalLoggingSaveFormat" value="ModelDataLogs"/>
+                    <property name="SaveOutput" value="on"/>
+                    <property name="SaveState" value="off"/>
+                    <property name="SignalLogging" value="on"/>
+                    <property name="DSMLogging" value="on"/>
+                    <property name="InspectSignalLogs" value="off"/>
+                    <property name="VisualizeSimOutput" value="on"/>
+                    <property name="StreamToWorkspace" value="off"/>
+                    <property name="StreamVariableName" value="streamout"/>
+                    <property name="SaveTime" value="on"/>
+                    <property name="ReturnWorkspaceOutputs" value="off"/>
+                    <property name="StateSaveName" value="xout"/>
+                    <property name="TimeSaveName" value="tout"/>
+                    <property name="OutputSaveName" value="yout"/>
+                    <property name="SignalLoggingName" value="logsout"/>
+                    <property name="DSMLoggingName" value="dsmout"/>
+                    <property name="OutputOption" value="RefineOutputTimes"/>
+                    <property name="OutputTimes" value="[]"/>
+                    <property name="ReturnWorkspaceOutputsName" value="out"/>
+                    <property name="Refine" value="1"/>
+                    <property name="LoggingToFile" value="off"/>
+                    <property name="DatasetSignalFormat" value="timeseries"/>
+                    <property name="LoggingFileName" value="out.mat"/>
+                    <property name="LoggingIntervals" value="[-inf, inf]"/>
+                </Simulink.DataIOCC>
+                <Simulink.OptimizationCC>
+                    <property  name="$ObjectID" value="18"/>
+                    <property name="Version" value="1.17.0"/>
+                    <Array>
+                        <property name="Type" value="Cell"/>
+                        <property  name="Dimension" value="8"/>
+                        <property name="Cell" value="ZeroExternalMemoryAtStartup"/>
+                        <property name="Cell" value="ZeroInternalMemoryAtStartup"/>
+                        <property name="Cell" value="OptimizeModelRefInitCode"/>
+                        <property name="Cell" value="NoFixptDivByZeroProtection"/>
+                        <property name="Cell" value="BooleansAsBitfields"/>
+                        <property name="Cell" value="PassReuseOutputArgsAs"/>
+                        <property name="Cell" value="PassReuseOutputArgsThreshold"/>
+                        <property name="Cell" value="UseSpecifiedMinMax"/>
+                        <property name="PropName" value="DisabledProps"/>
+                    </Array>
+                    <property name="Description" value=""/>
+                    <property name="BlockReduction" value="on"/>
+                    <property name="BooleanDataType" value="on"/>
+                    <property name="ConditionallyExecuteInputs" value="on"/>
+                    <property name="DefaultParameterBehavior" value="Tunable"/>
+                    <property name="UseDivisionForNetSlopeComputation" value="off"/>
+                    <property name="UseFloatMulNetSlope" value="off"/>
+                    <property name="DefaultUnderspecifiedDataType" value="double"/>
+                    <property name="UseSpecifiedMinMax" value="off"/>
+                    <property name="InlineInvariantSignals" value="off"/>
+                    <property name="OptimizeBlockIOStorage" value="on"/>
+                    <property name="BufferReuse" value="on"/>
+                    <property name="EnhancedBackFolding" value="off"/>
+                    <property name="CachingGlobalReferences" value="off"/>
+                    <property name="GlobalBufferReuse" value="on"/>
+                    <property name="StrengthReduction" value="off"/>
+                    <property name="AdvancedOptControl" value=""/>
+                    <property name="ExpressionFolding" value="on"/>
+                    <property name="BooleansAsBitfields" value="off"/>
+                    <property name="BitfieldContainerType" value="uint_T"/>
+                    <property name="EnableMemcpy" value="on"/>
+                    <property  name="MemcpyThreshold" value="64"/>
+                    <property name="PassReuseOutputArgsAs" value="Structure reference"/>
+                    <property  name="PassReuseOutputArgsThreshold" value="12"/>
+                    <property  name="ExpressionDepthLimit" value="2147483647"/>
+                    <property name="LocalBlockOutputs" value="on"/>
+                    <property  name="RollThreshold" value="5"/>
+                    <property name="StateBitsets" value="off"/>
+                    <property name="DataBitsets" value="off"/>
+                    <property name="ActiveStateOutputEnumStorageType" value="Native Integer"/>
+                    <property name="ZeroExternalMemoryAtStartup" value="on"/>
+                    <property name="ZeroInternalMemoryAtStartup" value="on"/>
+                    <property name="InitFltsAndDblsToZero" value="off"/>
+                    <property name="NoFixptDivByZeroProtection" value="off"/>
+                    <property name="EfficientFloat2IntCast" value="off"/>
+                    <property name="EfficientMapNaN2IntZero" value="on"/>
+                    <property name="LifeSpan" value="inf"/>
+                    <property name="MaxStackSize" value="Inherit from target"/>
+                    <property name="BufferReusableBoundary" value="on"/>
+                    <property name="SimCompilerOptimization" value="off"/>
+                    <property name="AccelVerboseBuild" value="off"/>
+                    <property name="OptimizeBlockOrder" value="off"/>
+                    <property name="OptimizeDataStoreBuffers" value="on"/>
+                    <property name="BusAssignmentInplaceUpdate" value="on"/>
+                </Simulink.OptimizationCC>
+                <Simulink.DebuggingCC>
+                    <property  name="$ObjectID" value="19"/>
+                    <property name="Version" value="1.17.0"/>
+                    <Array>
+                        <property name="Type" value="Cell"/>
+                        <property  name="Dimension" value="1"/>
+                        <property name="Cell" value="UseOnlyExistingSharedCode"/>
+                        <property name="PropName" value="DisabledProps"/>
+                    </Array>
+                    <property name="Description" value=""/>
+                    <property name="RTPrefix" value="error"/>
+                    <property name="ConsistencyChecking" value="none"/>
+                    <property name="ArrayBoundsChecking" value="none"/>
+                    <property name="SignalInfNanChecking" value="none"/>
+                    <property name="SignalRangeChecking" value="none"/>
+                    <property name="ReadBeforeWriteMsg" value="UseLocalSettings"/>
+                    <property name="WriteAfterWriteMsg" value="UseLocalSettings"/>
+                    <property name="WriteAfterReadMsg" value="UseLocalSettings"/>
+                    <property name="AlgebraicLoopMsg" value="warning"/>
+                    <property name="ArtificialAlgebraicLoopMsg" value="warning"/>
+                    <property name="SaveWithDisabledLinksMsg" value="warning"/>
+                    <property name="SaveWithParameterizedLinksMsg" value="warning"/>
+                    <property name="CheckSSInitialOutputMsg" value="on"/>
+                    <property name="UnderspecifiedInitializationDetection" value="Classic"/>
+                    <property name="MergeDetectMultiDrivingBlocksExec" value="none"/>
+                    <property name="CheckExecutionContextPreStartOutputMsg" value="off"/>
+                    <property name="CheckExecutionContextRuntimeOutputMsg" value="off"/>
+                    <property name="SignalResolutionControl" value="UseLocalSettings"/>
+                    <property name="BlockPriorityViolationMsg" value="warning"/>
+                    <property name="MinStepSizeMsg" value="warning"/>
+                    <property name="TimeAdjustmentMsg" value="none"/>
+                    <property name="MaxConsecutiveZCsMsg" value="error"/>
+                    <property name="MaskedZcDiagnostic" value="warning"/>
+                    <property name="IgnoredZcDiagnostic" value="warning"/>
+                    <property name="SolverPrmCheckMsg" value="none"/>
+                    <property name="InheritedTsInSrcMsg" value="warning"/>
+                    <property name="MultiTaskDSMMsg" value="error"/>
+                    <property name="MultiTaskCondExecSysMsg" value="error"/>
+                    <property name="MultiTaskRateTransMsg" value="error"/>
+                    <property name="SingleTaskRateTransMsg" value="none"/>
+                    <property name="TasksWithSamePriorityMsg" value="warning"/>
+                    <property name="SigSpecEnsureSampleTimeMsg" value="warning"/>
+                    <property name="CheckMatrixSingularityMsg" value="none"/>
+                    <property name="IntegerOverflowMsg" value="warning"/>
+                    <property name="Int32ToFloatConvMsg" value="warning"/>
+                    <property name="ParameterDowncastMsg" value="error"/>
+                    <property name="ParameterOverflowMsg" value="error"/>
+                    <property name="ParameterUnderflowMsg" value="none"/>
+                    <property name="ParameterPrecisionLossMsg" value="warning"/>
+                    <property name="ParameterTunabilityLossMsg" value="warning"/>
+                    <property name="FixptConstUnderflowMsg" value="none"/>
+                    <property name="FixptConstOverflowMsg" value="none"/>
+                    <property name="FixptConstPrecisionLossMsg" value="none"/>
+                    <property name="UnderSpecifiedDataTypeMsg" value="none"/>
+                    <property name="UnnecessaryDatatypeConvMsg" value="none"/>
+                    <property name="VectorMatrixConversionMsg" value="none"/>
+                    <property name="InvalidFcnCallConnMsg" value="error"/>
+                    <property name="FcnCallInpInsideContextMsg" value="warning"/>
+                    <property name="SignalLabelMismatchMsg" value="none"/>
+                    <property name="UnconnectedInputMsg" value="warning"/>
+                    <property name="UnconnectedOutputMsg" value="warning"/>
+                    <property name="UnconnectedLineMsg" value="warning"/>
+                    <property name="UseOnlyExistingSharedCode" value="error"/>
+                    <property name="SFcnCompatibilityMsg" value="none"/>
+                    <property name="FrameProcessingCompatibilityMsg" value="error"/>
+                    <property name="UniqueDataStoreMsg" value="none"/>
+                    <property name="BusObjectLabelMismatch" value="warning"/>
+                    <property name="RootOutportRequireBusObject" value="warning"/>
+                    <property name="AssertControl" value="UseLocalSettings"/>
+                    <property name="AllowSymbolicDim" value="on"/>
+                    <property name="RowMajorDimensionSupport" value="off"/>
+                    <property name="ModelReferenceIOMsg" value="none"/>
+                    <property name="ModelReferenceMultiInstanceNormalModeStructChecksumCheck" value="error"/>
+                    <property name="ModelReferenceVersionMismatchMessage" value="none"/>
+                    <property name="ModelReferenceIOMismatchMessage" value="none"/>
+                    <property name="UnknownTsInhSupMsg" value="warning"/>
+                    <property name="ModelReferenceDataLoggingMessage" value="warning"/>
+                    <property name="ModelReferenceSymbolNameMessage" value="warning"/>
+                    <property name="ModelReferenceExtraNoncontSigs" value="error"/>
+                    <property name="StateNameClashWarn" value="warning"/>
+                    <property name="SimStateInterfaceChecksumMismatchMsg" value="warning"/>
+                    <property name="SimStateOlderReleaseMsg" value="error"/>
+                    <property name="InitInArrayFormatMsg" value="warning"/>
+                    <property name="StrictBusMsg" value="ErrorLevel1"/>
+                    <property name="BusNameAdapt" value="WarnAndRepair"/>
+                    <property name="NonBusSignalsTreatedAsBus" value="none"/>
+                    <property name="SymbolicDimMinMaxWarning" value="warning"/>
+                    <property name="LossOfSymbolicDimsSimulationWarning" value="warning"/>
+                    <property name="LossOfSymbolicDimsCodeGenerationWarning" value="error"/>
+                    <property name="SymbolicDimsDataTypeCodeGenerationDiagnostic" value="error"/>
+                    <property name="BlockIODiagnostic" value="none"/>
+                    <property name="SFUnusedDataAndEventsDiag" value="warning"/>
+                    <property name="SFUnexpectedBacktrackingDiag" value="warning"/>
+                    <property name="SFInvalidInputDataAccessInChartInitDiag" value="warning"/>
+                    <property name="SFNoUnconditionalDefaultTransitionDiag" value="warning"/>
+                    <property name="SFTransitionOutsideNaturalParentDiag" value="warning"/>
+                    <property name="SFUnreachableExecutionPathDiag" value="warning"/>
+                    <property name="SFUndirectedBroadcastEventsDiag" value="warning"/>
+                    <property name="SFTransitionActionBeforeConditionDiag" value="warning"/>
+                    <property name="SFOutputUsedAsStateInMooreChartDiag" value="error"/>
+                    <property name="SFTemporalDelaySmallerThanSampleTimeDiag" value="warning"/>
+                    <property name="SFSelfTransitionDiag" value="warning"/>
+                    <property name="SFExecutionAtInitializationDiag" value="none"/>
+                    <property name="SFMachineParentedDataDiag" value="warning"/>
+                    <property name="IntegerSaturationMsg" value="warning"/>
+                    <property name="AllowedUnitSystems" value="all"/>
+                    <property name="UnitsInconsistencyMsg" value="warning"/>
+                    <property name="AllowAutomaticUnitConversions" value="on"/>
+                    <property name="UnitDatabase" value=""/>
+                </Simulink.DebuggingCC>
+                <Simulink.HardwareCC>
+                    <property  name="$ObjectID" value="20"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value=""/>
+                    <property  name="ProdBitPerChar" value="8"/>
+                    <property  name="ProdBitPerShort" value="16"/>
+                    <property  name="ProdBitPerInt" value="32"/>
+                    <property  name="ProdBitPerLong" value="32"/>
+                    <property  name="ProdBitPerLongLong" value="64"/>
+                    <property  name="ProdBitPerFloat" value="32"/>
+                    <property  name="ProdBitPerDouble" value="64"/>
+                    <property  name="ProdBitPerPointer" value="32"/>
+                    <property  name="ProdBitPerSizeT" value="32"/>
+                    <property  name="ProdBitPerPtrDiffT" value="32"/>
+                    <property name="ProdLargestAtomicInteger" value="Char"/>
+                    <property name="ProdLargestAtomicFloat" value="None"/>
+                    <property name="ProdIntDivRoundTo" value="Undefined"/>
+                    <property name="ProdEndianess" value="Unspecified"/>
+                    <property  name="ProdWordSize" value="32"/>
+                    <property name="ProdShiftRightIntArith" value="on"/>
+                    <property name="ProdLongLongMode" value="off"/>
+                    <property name="ProdHWDeviceType" value="32-bit Generic"/>
+                    <property  name="TargetBitPerChar" value="8"/>
+                    <property  name="TargetBitPerShort" value="16"/>
+                    <property  name="TargetBitPerInt" value="32"/>
+                    <property  name="TargetBitPerLong" value="32"/>
+                    <property  name="TargetBitPerLongLong" value="64"/>
+                    <property  name="TargetBitPerFloat" value="32"/>
+                    <property  name="TargetBitPerDouble" value="64"/>
+                    <property  name="TargetBitPerPointer" value="32"/>
+                    <property  name="TargetBitPerSizeT" value="32"/>
+                    <property  name="TargetBitPerPtrDiffT" value="32"/>
+                    <property name="TargetLargestAtomicInteger" value="Char"/>
+                    <property name="TargetLargestAtomicFloat" value="None"/>
+                    <property name="TargetShiftRightIntArith" value="on"/>
+                    <property name="TargetLongLongMode" value="off"/>
+                    <property name="TargetIntDivRoundTo" value="Undefined"/>
+                    <property name="TargetEndianess" value="Unspecified"/>
+                    <property  name="TargetWordSize" value="32"/>
+                    <property  name="TargetPreprocMaxBitsSint" value="32"/>
+                    <property  name="TargetPreprocMaxBitsUint" value="32"/>
+                    <property name="TargetHWDeviceType" value="Specified"/>
+                    <property name="TargetUnknown" value="off"/>
+                    <property name="ProdEqTarget" value="on"/>
+                    <property name="UseEmbeddedCoderFeatures" value="on"/>
+                    <property name="UseSimulinkCoderFeatures" value="on"/>
+                </Simulink.HardwareCC>
+                <Simulink.ModelReferenceCC>
+                    <property  name="$ObjectID" value="21"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value=""/>
+                    <property name="UpdateModelReferenceTargets" value="IfOutOfDateOrStructuralChange"/>
+                    <property name="EnableRefExpFcnMdlSchedulingChecks" value="on"/>
+                    <property name="CheckModelReferenceTargetMessage" value="error"/>
+                    <property name="EnableParallelModelReferenceBuilds" value="off"/>
+                    <property name="ParallelModelReferenceErrorOnInvalidPool" value="on"/>
+                    <property name="ParallelModelReferenceMATLABWorkerInit" value="None"/>
+                    <property name="ModelReferenceNumInstancesAllowed" value="Multi"/>
+                    <property name="PropagateVarSize" value="Infer from blocks in model"/>
+                    <property name="ModelDependencies" value=""/>
+                    <property name="ModelReferencePassRootInputsByReference" value="on"/>
+                    <property name="ModelReferenceMinAlgLoopOccurrences" value="off"/>
+                    <property name="PropagateSignalLabelsOutOfModel" value="off"/>
+                    <property name="SupportModelReferenceSimTargetCustomCode" value="off"/>
+                </Simulink.ModelReferenceCC>
+                <Simulink.SFSimCC>
+                    <property  name="$ObjectID" value="22"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value=""/>
+                    <property name="SimCustomSourceCode" value=""/>
+                    <property name="SimCustomHeaderCode" value=""/>
+                    <property name="SimCustomInitializer" value=""/>
+                    <property name="SimCustomTerminator" value=""/>
+                    <property  name="SimReservedNameArray" value="[]"/>
+                    <property name="SimUserSources" value=""/>
+                    <property name="SimUserIncludeDirs" value=""/>
+                    <property name="SimUserLibraries" value=""/>
+                    <property name="SimUserDefines" value=""/>
+                    <property name="SimCustomCompilerFlags" value=""/>
+                    <property name="SimCustomLinkerFlags" value=""/>
+                    <property name="SFSimEcho" value="on"/>
+                    <property name="SimCtrlC" value="on"/>
+                    <property name="SimIntegrity" value="on"/>
+                    <property name="SimUseLocalCustomCode" value="off"/>
+                    <property name="SimParseCustomCode" value="off"/>
+                    <property name="SimBuildMode" value="sf_incremental_build"/>
+                    <property name="SimGenImportedTypeDefs" value="off"/>
+                    <property name="ModelFunctionsGlobalVisibility" value="on"/>
+                    <property  name="CompileTimeRecursionLimit" value="50"/>
+                    <property name="EnableRuntimeRecursion" value="on"/>
+                    <property name="MATLABDynamicMemAlloc" value="on"/>
+                    <property  name="MATLABDynamicMemAllocThreshold" value="65536"/>
+                </Simulink.SFSimCC>
+                <Simulink.RTWCC>
+                    <property name="$BackupClass" value="Simulink.RTWCC"/>
+                    <property  name="$ObjectID" value="23"/>
+                    <property name="Version" value="1.17.0"/>
+                    <Array>
+                        <property name="Type" value="Cell"/>
+                        <property  name="Dimension" value="13"/>
+                        <property name="Cell" value="IncludeHyperlinkInReport"/>
+                        <property name="Cell" value="GenerateTraceInfo"/>
+                        <property name="Cell" value="GenerateTraceReport"/>
+                        <property name="Cell" value="GenerateTraceReportSl"/>
+                        <property name="Cell" value="GenerateTraceReportSf"/>
+                        <property name="Cell" value="GenerateTraceReportEml"/>
+                        <property name="Cell" value="PortableWordSizes"/>
+                        <property name="Cell" value="GenerateWebview"/>
+                        <property name="Cell" value="GenerateCodeMetricsReport"/>
+                        <property name="Cell" value="GenerateCodeReplacementReport"/>
+                        <property name="Cell" value="GenerateMissedCodeReplacementReport"/>
+                        <property name="Cell" value="GenerateErtSFunction"/>
+                        <property name="Cell" value="CreateSILPILBlock"/>
+                        <property name="PropName" value="DisabledProps"/>
+                    </Array>
+                    <property name="SystemTargetFile" value="grt.tlc"/>
+                    <property name="HardwareBoard" value="None"/>
+                    <property name="TLCOptions" value=""/>
+                    <property name="GenCodeOnly" value="off"/>
+                    <property name="MakeCommand" value="make_rtw"/>
+                    <property name="GenerateMakefile" value="on"/>
+                    <property name="PackageGeneratedCodeAndArtifacts" value="off"/>
+                    <property name="PackageName" value=""/>
+                    <property name="TemplateMakefile" value="grt_default_tmf"/>
+                    <property name="PostCodeGenCommand" value=""/>
+                    <property name="Description" value=""/>
+                    <property name="GenerateReport" value="off"/>
+                    <property name="SaveLog" value="off"/>
+                    <property name="RTWVerbose" value="on"/>
+                    <property name="RetainRTWFile" value="off"/>
+                    <property  name="RTWBuildHooks" value="[]"/>
+                    <property name="ProfileTLC" value="off"/>
+                    <property name="TLCDebug" value="off"/>
+                    <property name="TLCCoverage" value="off"/>
+                    <property name="TLCAssert" value="off"/>
+                    <property name="RTWUseLocalCustomCode" value="off"/>
+                    <property name="RTWUseSimCustomCode" value="off"/>
+                    <property name="CustomSourceCode" value=""/>
+                    <property name="CustomHeaderCode" value=""/>
+                    <property name="CustomInclude" value=""/>
+                    <property name="CustomSource" value=""/>
+                    <property name="CustomLibrary" value=""/>
+                    <property name="CustomDefine" value=""/>
+                    <property name="CustomLAPACKCallback" value=""/>
+                    <property name="CustomInitializer" value=""/>
+                    <property name="CustomTerminator" value=""/>
+                    <property name="Toolchain" value="Automatically locate an installed toolchain"/>
+                    <property name="BuildConfiguration" value="Faster Builds"/>
+                    <property  name="CustomToolchainOptions" value="[]"/>
+                    <property name="IncludeHyperlinkInReport" value="off"/>
+                    <property name="LaunchReport" value="off"/>
+                    <property name="PortableWordSizes" value="off"/>
+                    <property name="CreateSILPILBlock" value="None"/>
+                    <property name="CodeExecutionProfiling" value="off"/>
+                    <property name="CodeExecutionProfileVariable" value="executionProfile"/>
+                    <property name="CodeProfilingSaveOptions" value="SummaryOnly"/>
+                    <property name="CodeProfilingInstrumentation" value="off"/>
+                    <property name="SILDebugging" value="off"/>
+                    <property name="TargetLang" value="C"/>
+                    <property name="IncludeBusHierarchyInRTWFileBlockHierarchyMap" value="off"/>
+                    <property name="GenerateTraceInfo" value="off"/>
+                    <property name="GenerateTraceReport" value="off"/>
+                    <property name="GenerateTraceReportSl" value="off"/>
+                    <property name="GenerateTraceReportSf" value="off"/>
+                    <property name="GenerateTraceReportEml" value="off"/>
+                    <property name="GenerateWebview" value="off"/>
+                    <property name="GenerateCodeMetricsReport" value="off"/>
+                    <property name="GenerateCodeReplacementReport" value="off"/>
+                    <property name="GenerateMissedCodeReplacementReport" value="off"/>
+                    <property name="RTWCompilerOptimization" value="off"/>
+                    <property  name="ObjectivePriorities" value="[]"/>
+                    <property name="RTWCustomCompilerOptimizations" value=""/>
+                    <property name="CheckMdlBeforeBuild" value="Off"/>
+                    <property  name="SharedConstantsCachingThreshold" value="1024"/>
+                    <Array>
+                        <property name="Type" value="Handle"/>
+                        <property  name="Dimension" value="2"/>
+                        <Simulink.CodeAppCC>
+                            <property  name="$ObjectID" value="24"/>
+                            <property name="Version" value="1.17.0"/>
+                            <Array>
+                                <property name="Type" value="Cell"/>
+                                <property  name="Dimension" value="27"/>
+                                <property name="Cell" value="IgnoreCustomStorageClasses"/>
+                                <property name="Cell" value="IgnoreTestpoints"/>
+                                <property name="Cell" value="InsertBlockDesc"/>
+                                <property name="Cell" value="SFDataObjDesc"/>
+                                <property name="Cell" value="SimulinkDataObjDesc"/>
+                                <property name="Cell" value="DefineNamingRule"/>
+                                <property name="Cell" value="SignalNamingRule"/>
+                                <property name="Cell" value="ParamNamingRule"/>
+                                <property name="Cell" value="InlinedPrmAccess"/>
+                                <property name="Cell" value="CustomSymbolStr"/>
+                                <property name="Cell" value="CustomSymbolStrGlobalVar"/>
+                                <property name="Cell" value="CustomSymbolStrType"/>
+                                <property name="Cell" value="CustomSymbolStrField"/>
+                                <property name="Cell" value="CustomSymbolStrFcn"/>
+                                <property name="Cell" value="CustomSymbolStrBlkIO"/>
+                                <property name="Cell" value="CustomSymbolStrTmpVar"/>
+                                <property name="Cell" value="CustomSymbolStrMacro"/>
+                                <property name="Cell" value="InsertPolySpaceComments"/>
+                                <property name="Cell" value="MATLABFcnDesc"/>
+                                <property name="Cell" value="InternalIdentifier"/>
+                                <property name="Cell" value="CustomSymbolStrModelFcn"/>
+                                <property name="Cell" value="CustomSymbolStrFcnArg"/>
+                                <property name="Cell" value="CustomSymbolStrUtil"/>
+                                <property name="Cell" value="CustomSymbolStrEmxType"/>
+                                <property name="Cell" value="CustomSymbolStrEmxFcn"/>
+                                <property name="Cell" value="CustomUserTokenString"/>
+                                <property name="Cell" value="ReqsInCode"/>
+                                <property name="PropName" value="DisabledProps"/>
+                            </Array>
+                            <property name="Description" value=""/>
+                            <property name="Comment" value=""/>
+                            <property name="ForceParamTrailComments" value="off"/>
+                            <property name="GenerateComments" value="on"/>
+                            <property name="CommentStyle" value="Auto"/>
+                            <property name="IgnoreCustomStorageClasses" value="on"/>
+                            <property name="IgnoreTestpoints" value="off"/>
+                            <property name="IncHierarchyInIds" value="off"/>
+                            <property  name="MaxIdLength" value="31"/>
+                            <property name="PreserveName" value="off"/>
+                            <property name="PreserveNameWithParent" value="off"/>
+                            <property name="ShowEliminatedStatement" value="off"/>
+                            <property name="OperatorAnnotations" value="off"/>
+                            <property name="IncAutoGenComments" value="off"/>
+                            <property name="SimulinkDataObjDesc" value="off"/>
+                            <property name="SFDataObjDesc" value="off"/>
+                            <property name="MATLABFcnDesc" value="off"/>
+                            <property name="IncDataTypeInIds" value="off"/>
+                            <property  name="MangleLength" value="1"/>
+                            <property name="CustomSymbolStrGlobalVar" value="$R$N$M"/>
+                            <property name="CustomSymbolStrType" value="$N$R$M_T"/>
+                            <property name="CustomSymbolStrField" value="$N$M"/>
+                            <property name="CustomSymbolStrFcn" value="$R$N$M$F"/>
+                            <property name="CustomSymbolStrModelFcn" value="$R$N"/>
+                            <property name="CustomSymbolStrFcnArg" value="rt$I$N$M"/>
+                            <property name="CustomSymbolStrBlkIO" value="rtb_$N$M"/>
+                            <property name="CustomSymbolStrTmpVar" value="$N$M"/>
+                            <property name="CustomSymbolStrMacro" value="$R$N$M"/>
+                            <property name="CustomSymbolStrUtil" value="$N$C"/>
+                            <property name="CustomSymbolStrEmxType" value="emxArray_$M$N"/>
+                            <property name="CustomSymbolStrEmxFcn" value="emx$M$N"/>
+                            <property name="CustomUserTokenString" value=""/>
+                            <property name="CustomCommentsFcn" value=""/>
+                            <property name="DefineNamingRule" value="None"/>
+                            <property name="DefineNamingFcn" value=""/>
+                            <property name="ParamNamingRule" value="None"/>
+                            <property name="ParamNamingFcn" value=""/>
+                            <property name="SignalNamingRule" value="None"/>
+                            <property name="SignalNamingFcn" value=""/>
+                            <property name="InsertBlockDesc" value="off"/>
+                            <property name="InsertPolySpaceComments" value="off"/>
+                            <property name="SimulinkBlockComments" value="on"/>
+                            <property name="MATLABSourceComments" value="off"/>
+                            <property name="EnableCustomComments" value="off"/>
+                            <property name="InternalIdentifierFile" value=""/>
+                            <property name="InternalIdentifier" value="Shortened"/>
+                            <property name="InlinedPrmAccess" value="Literals"/>
+                            <property name="ReqsInCode" value="off"/>
+                            <property name="UseSimReservedNames" value="off"/>
+                            <property  name="ReservedNameArray" value="[]"/>
+                        </Simulink.CodeAppCC>
+                        <Simulink.GRTTargetCC>
+                            <property name="$BackupClass" value="Simulink.TargetCC"/>
+                            <property  name="$ObjectID" value="25"/>
+                            <property name="Version" value="1.17.0"/>
+                            <Array>
+                                <property name="Type" value="Cell"/>
+                                <property  name="Dimension" value="17"/>
+                                <property name="Cell" value="IncludeMdlTerminateFcn"/>
+                                <property name="Cell" value="GenerateAllocFcn"/>
+                                <property name="Cell" value="SuppressErrorStatus"/>
+                                <property name="Cell" value="ERTCustomFileBanners"/>
+                                <property name="Cell" value="GenerateSampleERTMain"/>
+                                <property name="Cell" value="GenerateTestInterfaces"/>
+                                <property name="Cell" value="ModelStepFunctionPrototypeControlCompliant"/>
+                                <property name="Cell" value="CPPClassGenCompliant"/>
+                                <property name="Cell" value="SupportNonInlinedSFcns"/>
+                                <property name="Cell" value="PurelyIntegerCode"/>
+                                <property name="Cell" value="PortableWordSizes"/>
+                                <property name="Cell" value="SupportComplex"/>
+                                <property name="Cell" value="SupportAbsoluteTime"/>
+                                <property name="Cell" value="SupportContinuousTime"/>
+                                <property name="Cell" value="RemoveResetFunc"/>
+                                <property name="Cell" value="ExistingSharedCode"/>
+                                <property name="Cell" value="RemoveDisableFunc"/>
+                                <property name="PropName" value="DisabledProps"/>
+                            </Array>
+                            <property name="Description" value=""/>
+                            <property name="TargetFcnLib" value="ansi_tfl_table_tmw.mat"/>
+                            <property name="TargetLibSuffix" value=""/>
+                            <property name="TargetPreCompLibLocation" value=""/>
+                            <property name="GenFloatMathFcnCalls" value="NOT IN USE"/>
+                            <property name="TargetLangStandard" value="C89/C90 (ANSI)"/>
+                            <property name="CodeReplacementLibrary" value="None"/>
+                            <property name="UtilityFuncGeneration" value="Auto"/>
+                            <property name="MultiwordTypeDef" value="System defined"/>
+                            <property  name="MultiwordLength" value="2048"/>
+                            <property name="GenerateFullHeader" value="on"/>
+                            <property name="InferredTypesCompatibility" value="off"/>
+                            <property name="ExistingSharedCode" value=""/>
+                            <property name="GenerateSampleERTMain" value="off"/>
+                            <property name="GenerateTestInterfaces" value="off"/>
+                            <property name="ModelReferenceCompliant" value="on"/>
+                            <property name="ParMdlRefBuildCompliant" value="on"/>
+                            <property name="CompOptLevelCompliant" value="on"/>
+                            <property name="ConcurrentExecutionCompliant" value="on"/>
+                            <property name="IncludeMdlTerminateFcn" value="on"/>
+                            <property name="GeneratePreprocessorConditionals" value="Disable all"/>
+                            <property name="CombineOutputUpdateFcns" value="off"/>
+                            <property name="CombineSignalStateStructs" value="off"/>
+                            <property name="SuppressErrorStatus" value="off"/>
+                            <property name="ERTFirstTimeCompliant" value="off"/>
+                            <property name="IncludeFileDelimiter" value="Auto"/>
+                            <property name="ERTCustomFileBanners" value="off"/>
+                            <property name="SupportAbsoluteTime" value="on"/>
+                            <property name="LogVarNameModifier" value="rt_"/>
+                            <property name="MatFileLogging" value="on"/>
+                            <property name="MultiInstanceERTCode" value="off"/>
+                            <property name="CodeInterfacePackaging" value="Nonreusable function"/>
+                            <property name="SupportNonFinite" value="on"/>
+                            <property name="SupportComplex" value="on"/>
+                            <property name="PurelyIntegerCode" value="off"/>
+                            <property name="SupportContinuousTime" value="on"/>
+                            <property name="SupportNonInlinedSFcns" value="on"/>
+                            <property name="RemoveDisableFunc" value="off"/>
+                            <property name="RemoveResetFunc" value="off"/>
+                            <property name="SupportVariableSizeSignals" value="off"/>
+                            <property name="ParenthesesLevel" value="Nominal"/>
+                            <property name="CastingMode" value="Nominal"/>
+                            <property name="MATLABClassNameForMDSCustomization" value="Simulink.SoftwareTarget.GRTCustomization"/>
+                            <property name="ModelStepFunctionPrototypeControlCompliant" value="off"/>
+                            <property name="CPPClassGenCompliant" value="on"/>
+                            <property name="AutosarCompliant" value="off"/>
+                            <property name="MDXCompliant" value="off"/>
+                            <property name="GRTInterface" value="on"/>
+                            <property name="GenerateAllocFcn" value="off"/>
+                            <property name="UseToolchainInfoCompliant" value="on"/>
+                            <property name="GenerateSharedConstants" value="on"/>
+                            <property  name="CoderGroups" value="[]"/>
+                            <property  name="AccessMethods" value="[]"/>
+                            <property name="LookupTableObjectStructAxisOrder" value="1,2,3,4,..."/>
+                            <property name="UseMalloc" value="off"/>
+                            <property name="ExtMode" value="off"/>
+                            <property name="ExtModeStaticAlloc" value="off"/>
+                            <property name="ExtModeTesting" value="off"/>
+                            <property  name="ExtModeStaticAllocSize" value="1000000"/>
+                            <property  name="ExtModeTransport" value="0"/>
+                            <property name="ExtModeMexFile" value="ext_comm"/>
+                            <property name="ExtModeMexArgs" value=""/>
+                            <property name="ExtModeIntrfLevel" value="Level1"/>
+                            <property name="RTWCAPISignals" value="off"/>
+                            <property name="RTWCAPIParams" value="off"/>
+                            <property name="RTWCAPIStates" value="off"/>
+                            <property name="RTWCAPIRootIO" value="off"/>
+                            <property name="GenerateASAP2" value="off"/>
+                            <property name="MultiInstanceErrorCode" value="Error"/>
+                        </Simulink.GRTTargetCC>
+                        <property name="PropName" value="Components"/>
+                    </Array>
+                </Simulink.RTWCC>
+                <SlCovCC.ConfigComp>
+                    <property  name="$ObjectID" value="26"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value="Simulink Coverage Configuration Component"/>
+                    <property name="Name" value="Simulink Coverage"/>
+                    <property name="CovEnable" value="off"/>
+                    <property name="CovScope" value="EntireSystem"/>
+                    <property name="CovIncludeTopModel" value="on"/>
+                    <property name="RecordCoverage" value="off"/>
+                    <property name="CovPath" value="/"/>
+                    <property name="CovSaveName" value="covdata"/>
+                    <property name="CovCompData" value=""/>
+                    <property name="CovMetricSettings" value="dw"/>
+                    <property name="CovFilter" value=""/>
+                    <property name="CovHTMLOptions" value=""/>
+                    <property name="CovNameIncrementing" value="off"/>
+                    <property name="CovHtmlReporting" value="on"/>
+                    <property name="CovForceBlockReductionOff" value="on"/>
+                    <property name="CovEnableCumulative" value="on"/>
+                    <property name="CovSaveCumulativeToWorkspaceVar" value="on"/>
+                    <property name="CovSaveSingleToWorkspaceVar" value="on"/>
+                    <property name="CovCumulativeVarName" value="covCumulativeData"/>
+                    <property name="CovCumulativeReport" value="off"/>
+                    <property name="CovSaveOutputData" value="on"/>
+                    <property name="CovOutputDir" value="slcov_output/$ModelName$"/>
+                    <property name="CovDataFileName" value="$ModelName$_cvdata"/>
+                    <property name="CovShowResultsExplorer" value="on"/>
+                    <property name="CovReportOnPause" value="on"/>
+                    <property name="CovModelRefEnable" value="off"/>
+                    <property name="CovModelRefExcluded" value=""/>
+                    <property name="CovExternalEMLEnable" value="off"/>
+                    <property name="CovSFcnEnable" value="on"/>
+                    <property  name="CovBoundaryAbsTol" value="1"/>
+                    <property  name="e" value="-05"/>
+                    <property  name="CovBoundaryRelTol" value="0.01"/>
+                    <property name="CovUseTimeInterval" value="off"/>
+                    <property  name="CovStartTime" value="0"/>
+                    <property  name="CovStopTime" value="0"/>
+                    <property name="CovMcdcMode" value="Masking"/>
+                </SlCovCC.ConfigComp>
+                <hdlcoderui.hdlcc>
+                    <property  name="$ObjectID" value="27"/>
+                    <property name="Version" value="1.17.0"/>
+                    <property  name="DisabledProps" value="[]"/>
+                    <property name="Description" value="HDL Coder custom configuration component"/>
+                    <property name="Name" value="HDL Coder"/>
+                    <Array>
+                        <property name="Type" value="Cell"/>
+                        <property  name="Dimension" value="1"/>
+                        <property name="Cell" value=""/>
+                        <property name="PropName" value="HDLConfigFile"/>
+                    </Array>
+                    <property name="HDLCActiveTab" value="0"/>
+                </hdlcoderui.hdlcc>
+                <property name="PropName" value="Components"/>
+            </Array>
+            <property name="Name" value="Configuration"/>
+            <property name="ExtraOptions" value=""/>
+            <property name="CurrentDlgPage" value="Model Referencing"/>
+            <property  name="ConfigPrmDlgPosition" value="[521 36 1391 689]"/>
+        </Simulink.ConfigSet>
+        <property name="PropName" value="ConfigurationSets"/>
+    </Array>
+    <Simulink.ConfigSet>
+        <property name="$PropName" value="ActiveConfigurationSet"/>
+        <property  name="$ObjectID" value="15"/>
+    </Simulink.ConfigSet>
+    <Object>
+        <property name="$PropName" value="DataTransfer"/>
+        <property  name="$ObjectID" value="28"/>
+        <property name="$ClassName" value="Simulink.GlobalDataTransfer"/>
+        <property name="DefaultTransitionBetweenSyncTasks" value="Ensure deterministic transfer (maximum delay)"/>
+        <property name="DefaultTransitionBetweenAsyncTasks" value="Ensure data integrity only"/>
+        <property name="DefaultTransitionBetweenContTasks" value="Ensure deterministic transfer (minimum delay)"/>
+      

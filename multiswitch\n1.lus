@@ -1,0 +1,19 @@
+-- mdl2lus - 2014 ver. 0.41 (SHA 79444ea)
+-- Tue Nov 28 15:26:13 2017
+node multiswitch_n1(_1: real; st: int; _2: real; _3: real) returns (out_n: real);
+var
+   w_000: real;
+   w_001: real;
+   w_002: real;
+   w_003: real;
+   w_004: real;
+   w_005: int;
+let
+   w_002 = _1;
+   w_003 = _3;
+   w_001 = _2;
+   w_005 = st;
+   w_000 = (if w_005>2 then w_003 else w_001);
+   out_n = w_004;
+   w_004 = (if w_005>1 then w_000 else w_002);
+tel

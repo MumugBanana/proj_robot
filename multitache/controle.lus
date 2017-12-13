@@ -1,0 +1,160 @@
+-- mdl2lus - 2014 ver. 0.41 (SHA 79444ea)
+-- Wed Dec 13 11:42:29 2017
+const threshold_blanc : real;
+const threshold_noir : real;
+const threshold_distance : real;
+node controle(Collision_n: real; Cd_in: real) returns (state_switch_n: bool);
+var
+   w_000: bool;
+   w_001: bool;
+   w_002: bool;
+   w_003: bool;
+   w_004: bool;
+   w_005: bool;
+   w_006: int;
+   w_007: bool;
+   w_008: real;
+   w_009: real;
+let
+   w_009 = Cd_in;
+   w_008 = Collision_n;
+   w_005 = (w_006 = 3);
+   w_004 = (w_006 = 2);
+   w_001 = (false -> (pre w_002));
+   w_003 = (false -> (pre w_005));
+   state_switch_n = w_000;
+   w_002 = (not w_004);
+   w_007 = Demi_Tour(w_001, w_009);
+   w_006 = Automate(w_008, w_003, w_007);
+   w_000 = (w_006 > 1);
+tel
+node Automate(Collision: real; Reset: bool; NBN: bool) returns (state_n: int);
+var
+   w_000: bool;
+   w_001: int;
+   w_002: bool;
+   w_003: int;
+   w_004: int;
+   w_005: int;
+   w_006: int;
+   w_007: bool;
+   w_008: bool;
+   w_009: bool;
+   w_010: bool;
+   w_011: real;
+   w_012: bool;
+   w_013: real;
+let
+   w_011 = threshold_distance;
+   state_n = w_005;
+   w_000 = Memo_n1(w_009, w_007, w_012);
+   w_005 = (if w_002 then w_001 else w_006);
+   w_008 = NBN;
+   w_003 = 2;
+   w_002 = Memo_n2(w_013, w_011, w_012);
+   w_004 = 3;
+   w_010 = (false -> (pre w_002));
+   w_006 = 1;
+   w_009 = (w_010 and w_008);
+   w_012 = Reset;
+   w_001 = (if w_000 then w_004 else w_003);
+   w_007 = true;
+   w_013 = Collision;
+tel
+node Demi_Tour(Reset: bool; Cd: real) returns (next: bool);
+var
+   w_000: bool;
+   w_001: bool;
+   w_002: bool;
+   w_003: bool;
+   w_004: bool;
+   w_005: bool;
+   w_006: bool;
+   w_007: bool;
+   w_008: bool;
+   w_009: bool;
+   w_010: bool;
+   w_011: bool;
+   w_012: bool;
+   w_013: bool;
+   w_014: real;
+   w_015: bool;
+   w_016: real;
+   w_017: real;
+   w_018: bool;
+   w_019: real;
+   w_020: bool;
+   w_021: bool;
+let
+   w_006 = (w_011 and w_018);
+   w_018 = (w_016 <= w_017);
+   w_002 = (false -> (pre w_000));
+   w_005 = (not w_020);
+   w_012 = (w_016 >= w_019);
+   w_015 = (w_016 >= w_014);
+   w_003 = (w_009 and w_015);
+   w_010 = (false -> (pre w_011));
+   w_009 = (w_007 and w_005);
+   w_011 = (w_013 and w_021);
+   w_013 = (w_010 or w_012);
+   w_001 = (not w_020);
+   w_016 = Cd;
+   w_021 = (not w_020);
+   w_008 = (false -> (pre w_009));
+   w_004 = (w_002 or w_003);
+   w_007 = (w_008 or w_006);
+   w_000 = (w_004 and w_001);
+   w_017 = threshold_noir;
+   next = w_000;
+   w_020 = Reset;
+   w_014 = threshold_blanc;
+   w_019 = threshold_blanc;
+tel
+node Memo_n2(Value: real; Threshold: real; Reset: bool) returns (Result: bool);
+var
+   w_000: real;
+   w_001: bool;
+   w_002: bool;
+   w_003: bool;
+   w_004: bool;
+   w_005: bool;
+   w_006: real;
+   w_007: bool;
+   w_008: bool;
+   w_009: real;
+   w_010: bool;
+let
+   w_001 = (w_000 <= w_006);
+   w_008 = (not w_010);
+   w_007 = (w_005 and w_008);
+   w_002 = (w_001 and w_003);
+   Result = w_007;
+   w_009 = Threshold;
+   w_004 = (false -> (pre w_007));
+   w_003 = (w_006 <= w_009);
+   w_005 = (w_004 or w_002);
+   w_010 = Reset;
+   w_006 = Value;
+   w_000 = 0.0;
+tel
+node Memo_n1(Value: bool; Threshold: bool; Reset: bool) returns (Result: bool);
+var
+   w_000: bool;
+   w_001: bool;
+   w_002: bool;
+   w_003: bool;
+   w_004: bool;
+   w_005: bool;
+   w_006: bool;
+   w_007: bool;
+let
+   w_004 = (not w_007);
+   w_003 = (w_001 and w_004);
+   Result = w_003;
+   w_005 = Threshold;
+   w_000 = (false -> (pre w_003));
+   w_006 = (w_002 >= w_005);
+   w_001 = (w_000 or w_006);
+   w_007 = Reset;
+   w_002 = Value;
+tel
